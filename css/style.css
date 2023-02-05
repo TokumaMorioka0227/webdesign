@@ -38,6 +38,10 @@ header h1 a {
     pointer-events: auto;
 }
 
+.header-navigation-mobile {
+    display: none;
+}
+
 /* aタグをhoverした際、親要素の装飾追加 */
 .header-navigation-list-element:hover{
     background-color: #ffffff9c;
@@ -57,6 +61,39 @@ header h1 a {
     }
 
     /* ハンバーガーメニュー追加 */
+    .header-navigation-mobile {
+        display: block;
+        width: 2rem;
+    }
+
+    .header-navigation-mobile-icon-container {
+        padding: 0.25rem;
+        height: 3rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header-navigation-mobile-icon,
+    .header-navigation-mobile-icon:before,
+    .header-navigation-mobile-icon:after {
+        position: absolute;
+        display: block;
+        content: '';
+        height: 0.25rem;
+        width: 1.5rem;
+        background-color: #fff;
+        border-radius: 3px;
+    }
+
+    .header-navigation-mobile-icon::before {
+        top: -0.5rem;
+    }
+
+    .header-navigation-mobile-icon::after {
+        bottom: -0.5rem;
+    }
 }
 
 /* タブレットレイアウト */
