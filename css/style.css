@@ -29,20 +29,37 @@ header h1 a {
 
 .header-navigation-list-element {
     padding: 0.75em;
+    pointer-events: none;
 }
 
 .header-navigation-list-element a {
     text-decoration: none;
     color: #fff;
+    pointer-events: auto;
 }
 
-/* CSS3は親要素へのセレクタ指定が出来ないらしい */
-/* pointer-eventsプロパティを使用するか、jQuery, SASSで可能らしい */
+/* aタグをhoverした際、親要素の装飾追加 */
 .header-navigation-list-element:hover{
     background-color: #ffffff9c;
     border-radius: 1.5px;
 }
 
+/* aタグをhoverした際、aタグの装飾追加 */
 .header-navigation-list-element a:hover {
     color: rgb(248, 65, 65);
+}
+
+/* レスポンシブ対応 */
+/* スマホレイアウト */
+@media screen and (max-width: 375px) {
+    .header-navigation {
+        display: none;
+    }
+
+    /* ハンバーガーメニュー追加 */
+}
+
+/* タブレットレイアウト */
+@media screen and (max-width: 768px) {
+    
 }
