@@ -56,6 +56,11 @@ header h1 a {
 /* レスポンシブ対応 */
 /* スマホレイアウト */
 @media screen and (max-width: 375px) {
+    html {
+        /* 画面全体のフォントサイズ比率をPCの75%に変更 */
+        font-size: 75%;
+    }
+
     .header-navigation {
         display: none;
     }
