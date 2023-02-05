@@ -1,0 +1,48 @@
+body {
+    font-family: fantasy;
+}
+
+header {
+    padding: 0.8em;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header-navigation-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    align-content: center;
+}
+
+.header-navigation-list-element {
+    padding: 0.75em;
+}
+
+.header-navigation-list-element a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* CSS3は親要素へのセレクタ指定が出来ないらしい */
+/* pointer-eventsプロパティを使用するか、jQuery, SASSで可能らしい */
+.header-navigation-list-element:hover{
+    background-color: #ffffff9c;
+    border-radius: 1.5px;
+}
+
+.header-navigation-list-element a:hover {
+    color: rgb(248, 65, 65);
+}
