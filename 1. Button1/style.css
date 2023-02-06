@@ -1,0 +1,18 @@
+.button-container {
+    display: inline-block;
+    padding: 0.75rem;
+    margin: 30px;
+    border: 1px solid #00000034;
+    border-radius: 3px;
+    position: relative;
+}
+
+.button {
+    text-decoration: none;
+    color: #000000;
+}
+
+.button-container:hover {
+    position: absolute;
+    top: -0.1px;
+}
